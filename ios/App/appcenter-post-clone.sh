@@ -25,7 +25,7 @@ cd ../..
 npm i
 
 # run optimized production build
-npm run build-mobile
+npm run build:mobile:ci
 
 # copy the web assets to the native projects and updates the native plugins and dependencies based in package.json
 npx cap sync

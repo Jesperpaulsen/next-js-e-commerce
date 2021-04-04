@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "concurrently \"next\" \"cd studio && sanity start\"",
     "build": "echo 'Building Sanity to public/studio…' && cd studio && sanity build ../public/studio -y && cd .. && next build",
-    "build-mobile": "echo 'Building Sanity to public/studio…' && cd studio && sanity build ../public/studio -y && cd .. && next build && next export",
+    "build:mobile": "echo 'Building Sanity to public/studio…' && cd studio && sanity build ../public/studio -y && cd .. && next build && next export",
+    "build:mobile:ci": "next build && next export",
     "start": "vercel dev",
     "postinstall": "lerna bootstrap",
     "check-template": "sanity-template check"
