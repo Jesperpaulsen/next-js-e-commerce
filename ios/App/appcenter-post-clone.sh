@@ -14,6 +14,10 @@ npm config delete prefix
 nvm install "$NODE_VERSION"
 nvm alias node10 "$NODE_VERSION"
 
+sudo npm cache clean -f
+sudo npm install -g @ionic/cli
+
+
 # go to root of project
 cd ../..
 
