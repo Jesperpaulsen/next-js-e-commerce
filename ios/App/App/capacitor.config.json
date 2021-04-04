@@ -1,0 +1,6 @@
+{
+	"appId": "no.jesper.testNext",
+	"appName": "sanity-template-nextjs-ecommerce",
+	"webDir": "out",
+	"bundledWebRuntime": false
+}

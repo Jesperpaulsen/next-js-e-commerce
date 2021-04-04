@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "concurrently \"next\" \"cd studio && sanity start\"",
     "build": "echo 'Building Sanity to public/studio…' && cd studio && sanity build ../public/studio -y && cd .. && next build",
+    "build-mobile": "echo 'Building Sanity to public/studio…' && cd studio && sanity build ../public/studio -y && cd .. && next build && next export",
     "start": "vercel dev",
     "postinstall": "lerna bootstrap",
     "check-template": "sanity-template check"
@@ -15,6 +16,11 @@
     "url": "git+https://github.com/sanity-io/sanity-template-nextjs-ecommerce.git"
   },
   "dependencies": {
+    "@capacitor/cli": "^3.0.0-rc.0",
+    "@capacitor/core": "^3.0.0-rc.0",
+    "@capacitor/ios": "^3.0.0-rc.0",
+    "@ionic/react": "^5.6.3",
+    "@ionic/react-router": "^5.6.3",
     "@sanity/client": "^2.0.1",
     "@sanity/image-url": "^0.140.19",
     "next": "^10.0.1",

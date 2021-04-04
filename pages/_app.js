@@ -1,3 +1,4 @@
+import '@capacitor/core';
 import "../styles/index.css";
 import Layout from "../components/Layout";
 
